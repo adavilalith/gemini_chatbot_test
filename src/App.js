@@ -31,7 +31,7 @@ function App() {
       let config = {
         method: 'post',
         maxBodyLength: Infinity,
-        url: 'https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=AIzaSyBrhvj8dUMn5CosBn3PtmatVr27flm2vU4',
+        url: `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${process.env.REACT_APP_GEMINI_API_KEY}`,
         headers: { 
           'Content-Type': 'application/json'
         },
