@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="chat.css">
+    <title>Chat Bot Test</title>
+</head>
+<body>
+    <div id="main-chat">
+        <div id="output"></div>
+        <form id="chat-input" action="">
+            <input id="prompt" type="text">
+            <button id="prompt_submit" type="submit">Send</button>
+        </form>
+    </div>
+    <script type="importmap">
+        {
+          "imports": {
+            "@google/generative-ai": "https://esm.run/@google/generative-ai"
+          }
+        }
+    </script>
+    <script src="chat.js"></script>
+</body>
+</html>
